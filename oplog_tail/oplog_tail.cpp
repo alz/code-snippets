@@ -51,7 +51,6 @@ int main()
 				BSONObj obj = cursor->next();
 				lastTime = obj["ts"];
 				cout << obj.toString() << endl;
-				break;
 			}
 
 			query = QUERY("ts" << GT << lastTime).sort("$natural");
