@@ -51,7 +51,7 @@ int main()
 	luabind::module(state) [
 		// Map object to lua for direct access
 		luabind::class_<LuaTest>("LuaTest")
-      .def(luabind::constructor<string>()) 
+			.def(luabind::constructor<string>()) 
 			.def("getString", &LuaTest::getString)
 	];
 
