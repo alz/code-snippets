@@ -1,7 +1,7 @@
 /**
- * lua_functions.cpp
+ * lua_objects.cpp
  *
- * A quick example of how to export functions to lua from c++
+ * A quick example of how to map objects to lua with luabind
  */
 
 #include <iostream>
